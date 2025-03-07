@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-blue-200">
-    <div class="max-w-4xl mx-auto bg-white p-4 mt-4 rounded-lg shadow-lg">
+    <div class="max-w-4xl mx-auto bg-white p-4 my-4 rounded-lg shadow-lg min-h-[100vh]">
         <!-- Header -->
         <header class="flex justify-between items-center border-b pb-2 mb-4 rounded-md">
             <div class="text-xl text-gray-100 font-bold">Brand</div>
@@ -18,13 +18,13 @@
         </header>
         <!-- Main Content -->
         <main>
-            <section class="mb-8 flex gap-8 items-center">
-                <div class="text-center">
+            <section class="mb-8 flex gap-8 items-center sm:flex-wrap lg:flex-nowrap w-full">
+                <div class="text-center sm:order-2 sm:mx-auto lg:order-1">
                     <h1 class="text-2xl font-bold mb-2">Selamat Datang di Website Saya</h1>
                     <p class="text-gray-600 mb-4">Ini adalah contoh header dengan dua kolom. Kolom ini bisa kamu isi dengan teks.</p>
                     <a href="#" class="justify-self-center rounded-md block px-4 py-2 bg-blue-500 text-white hover:bg-blue-700">Pelajari Lebih Lanjut</a>
                 </div>
-                <div class="bg-blue-500 px-12 rounded-md">
+                <div class="bg-blue-500 px-12 rounded-md sm:order-1 sm:mx-auto lg:order-2">
                     <img src="assets/images/my-pic.png" alt="Placeholder image 600x400" class="mx-auto h-56 ">
                 </div>
             </section>
@@ -32,53 +32,49 @@
             <section class="text-center mb-8">
                 <h2 class="text-xl font-bold mb-4 text-blue-500">About Me</h2>
                 <p class="text-gray-600 mb-4">A brief introduction about myself.</p>
-                <table class="w-full text-center border-separate border-spacing-2 text-gray-600">
-                    <tr class="border-spacing-8">
-                        <td class="w-1/3">
-                            <div class="border p-4">
-                                <p class="font-bold">Full Name</p>
-                                <p class="font-bold text-blue-500">Fariandi Ramadhan</p>
-                            </div>
-                        </td>
-                        <td class="w-1/3">
-                            <div class="border p-4">
-                                <p class="font-bold">Education</p>
-                                <p class="font-bold text-blue-500">Informatika</p>
-                            </div>
-                        </td>
-                        <td class="w-1/3">
-                            <div class="border p-4">
-                                <p class="font-bold">Pekerjaan</p>
-                                <p class="font-bold text-blue-500">Mahasiswa</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="w-1/3">
-                            <div class="border p-4">
-                                <p class="font-bold">Contact</p>
-                                <p class="font-bold text-blue-500">my123@example.com</p>
-                            </div>
-                        </td>
-                        <td class="w-1/3">
-                            <div class="border p-4">
-                                <p class="font-bold">Hobi</p>
-                                <p class="font-bold text-blue-500">Coding</p>
-                            </div>
-                        </td>
-                        <td class="w-1/3">
-                            <div class="border p-4">
-                                <p class="font-bold">Alamat</p>
-                                <p class="font-bold text-blue-500">Jawa Barat</p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-1 lg:w-full text-center border-separate border-spacing-2 text-gray-600">
+                    <div>
+                        <div class="border p-4">
+                            <p class="font-bold">Full Name</p>
+                            <p class="font-bold text-blue-500">Fariandi Ramadhan</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border p-4">
+                            <p class="font-bold">Education</p>
+                            <p class="font-bold text-blue-500">Informatika</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border p-4">
+                            <p class="font-bold">Pekerjaan</p>
+                            <p class="font-bold text-blue-500">Mahasiswa</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border p-4">
+                            <p class="font-bold">Contact</p>
+                            <p class="font-bold text-blue-500">my123@example.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border p-4">
+                            <p class="font-bold">Hobi</p>
+                            <p class="font-bold text-blue-500">Coding</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border p-4">
+                            <p class="font-bold">Alamat</p>
+                            <p class="font-bold text-blue-500">Jawa Barat</p>
+                        </div>
+                    </div>
+                </div>
             </section>
             <hr class="my-8">
             <section class="text-center mb-4">
                 <h2 class="text-xl font-bold mb-4 text-blue-500">Portofolio</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 w-2/3 sm:mx-auto lg:w-full lg:grid-cols-3 gap-4">
                     <div class="border p-4">
                         <img src="assets/images/127.0.0.1_5501_.png" alt="Placeholder image 350x200" class="mx-auto mb-2">
                         <p class="font-bold">Project 1</p>
